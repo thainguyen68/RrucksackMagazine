@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./acsset/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <title>rucksackmag</title>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div class="header-inner">
+                <div class="top-left">
+                    <img src="./acsset/img/RucksackLogo.png" alt="logo" class="logo">
+                </div>
+                <div class="top-right">
+                    <div class="the4">
+                        <a class="about-js" href="#">About</a>
+                        <a class="shop-js" href="#">Shop</a>
+                        <a href="#">Stockists</a>
+                        <a href="#">Stories</a>
+                    </div>
+                    <a class="the1" href="#"><span>Cart 
+                      <span class="quantity">(0)</span> 
+                    </span></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="slider"></div>
+
+        <div id="main-nav">
+          <div class="main-nav__About js-main">
+            <div class="box-text-about">  <p>Rucksack Magazine is a printed bi-annual photography and travel publication dedicated to storytelling. We began in 2016 as an online journal and have recently printed our eighth volume of the magazine called Coast. We have also recently published our first hardback book called Elements, made in partnership with Lannoo Publishers. Our magazines, books and zines feature photo essays, travel stories and fictional pieces exploring a particular theme for each issue. We work as a platform for new and emerging photographers and writers, connecting a global community of creative storytellers.</p> <div class="empty"></div> </div>
+            <img class="nav-about" src="./acsset/img/itemAbout/item1.jpg" alt="">
+            <img class="nav-about" src="./acsset/img/itemAbout/item2.jpg" alt="">
+          </div>
+        </div>
+
+        <div id="content">
+          <div class="content-inner">
+              <div class="list-magazine">
+                  <img src="./acsset/img/allimgofmain/Vol8/item1.jpg" alt="" class="magazine-item">
+                  <div class="about-item">Volume Eight: Coast (Gold Edition)</div>
+                </div>
+              <div class="list-magazine">
+                  <img src="./acsset/img/allimgofmain/vol8-pink/item1.jpg" alt="" class="magazine-item">
+                  <div class="about-item">Volume Eight: Coast (Pink Edition)</div>
+                </div>
+              <div class="list-magazine">
+                  <img src="./acsset/img/allimgofmain/vol7-Abandoned/item1.jpg" alt="" class="magazine-item">
+                  <div class="about-item">Volume Seven: Abandoned</div>
+                </div>
+              <div class="list-magazine">
+                  <img src="./acsset/img/allimgofmain/Elements/item1.jpg" alt="" class="magazine-item">
+                  <div class="about-item">Elements: In Pursuit of the Wild</div>
+                </div>
+              <div class="list-magazine">
+                  <img src="./acsset/img/allimgofmain/Vol6/item1.jpg" alt="" class="magazine-item">
+                  <div class="about-item">Volume Six: Endless</div>
+                </div>
+              <div class="list-magazine">
+                  <img src="./acsset/img/allimgofmain/vol-5/item1.jpg" alt="" class="magazine-item">
+                  <div class="about-item">Volume Five: The City Issue</div>
+                </div>
+              <div class="list-magazine">
+                  <img src="./acsset/img/allimgofmain/vol-4/item1.jpg" alt="" class="magazine-item">
+                  <div class="about-item">Volume Four: The Pursuit Issue</div>
+                </div>
+              <div class="list-magazine">
+                  <img src="./acsset/img/allimgofmain/vol-3/item1.jpg" alt="" class="magazine-item">
+                  <div class="about-item">Volume Three: The Island Issue</div>
+                </div>
+              <div class="list-magazine">
+                  <img src="./acsset/img/allimgofmain/vol-2/item1.jpg" alt="" class="magazine-item">
+                  <div class="about-item">Volume Two: The Journey Issue</div>
+                </div>
+              <div class="list-magazine">
+                  <img src="./acsset/img/allimgofmain/vol-1/item1.jpg" alt="" class="magazine-item">
+                  <div class="about-item">Volume One: The Winter Issue</div>
+                </div>
+              <div class="list-magazine">
+                  <img src="./acsset/img/allimgofmain/Isolation/item1.jpg" alt="" class="magazine-item">
+                  <div class="about-item">Isolation</div>
+                </div>
+          </div>  
+        </div>
+
+
+        <div id="footer">
+          <div class="footer__footer-inner">
+              <div class="footer__footer-inner__main1">
+                <div class="about-a">
+                <a class="footer-nav" href="#">Contact</a>
+                <a class="footer-nav" href="#">Submissions</a>
+                <a class="footer-nav" href="#">Images</a>
+                <a class="footer-nav" href="#">FAQs</a>
+                </div>
+              </div>
+              <div class="footer__footer-inner__main2">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </div>
+              <p>© 2021 Rucksack Magazine Ltd. <em>cover-by:Thái Nguyễn</em></p>
+          </div>
+        </div>
+    </div>
+    <script>
+      const about = document.querySelector('.about-js')
+      const mainNav = document.querySelector('.js-main')
+      const content = document.querySelector('.content-inner')
+      const shop = document.querySelector('.shop-js')
+
+      function showAbouttab() {
+        mainNav.classList.add('open')
+        content.classList.add('close')
+      }
+
+      function hidenAbouttab() {
+        mainNav.classList.remove('open')
+        content.classList.remove('close')
+      }
+      about.addEventListener('click', showAbouttab)
+      shop.addEventListener('click', hidenAbouttab)
+      
+    </script>
+</body>
+</html>
