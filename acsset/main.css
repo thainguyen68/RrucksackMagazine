@@ -69,6 +69,56 @@ html {
 }
 
 
+/* toast-messages */
+.toast {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: sideInRight ease 5s, fadeOut linear 1s 10s forwards ;
+}
+.toast__main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-left: 4px;
+    border-left: 3px solid rgba(0, 0, 0, 0.705);
+}
+.toast__main .toast__title {
+    align-self: center;
+}
+
+.toast__icon {
+    font-size: 12px;
+    align-self: self-start;
+}
+
+
+@keyframes sideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeOut {
+    to{ opacity: 0;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #slider {
     padding: 30px 60px 0;
