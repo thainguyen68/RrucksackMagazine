@@ -17,7 +17,11 @@
     }
     #header .top-right {
         padding: 1px;
+        display: inline-block; /* mới thêm từ dòng này trở xuống của class Top-Right*/
+        line-height: 1.8;
     }
+
+
     .toast {
         margin: 0 18%;
     }
