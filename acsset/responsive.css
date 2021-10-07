@@ -1,0 +1,41 @@
+/* PC */
+@media (min-width: 1024px) {
+    
+}
+
+
+/* tablet */
+@media (max-width: 1023px) and (min-width: 740px) {
+  
+}
+
+
+/* mobile */
+@media (max-width: 739px) {
+    #header .header-inner {
+        padding: 50px 24px;
+    }
+    #header .top-right {
+        padding: 1px;
+    }
+    .toast {
+        margin: 0 18%;
+    }
+
+
+
+
+    .empty {
+        display: none;
+    }
+
+
+    #content {
+        padding: 0 20px 45px;
+    }
+    #content .list-magazine {
+        max-width: 50%;
+        padding: 0 10px;
+        margin: 15px 0;
+    }
+}
