@@ -14,16 +14,16 @@
     <div id="main">
      <!-- nav-mobile -->
       <div class="tab-nav tab-nav-js">
-        <div class="tab-nav--layout"></div>
-        <div class="the4-2">
+        <div class="tab-nav--layout"> <div class="btn2-nav-js the-i"><i class="fas fa-times"></i></div></div>
+        <div class="the4-2 tab-nav-container-js">
             <div class="the4-2-1">
-              <a class="nav-one about-js2" href="#">About</a>
-              <a class="nav-one shop-js2" href="#">Shop</a>
+              <a class="nav-one about-js" href="#">About</a>
+              <a class="nav-one shop-js" href="#">Shop</a>
               <a class="nav-one" href="#">Stockists</a>
               <a class="nav-one" href="#">Stories</a>
             </div>
-            <div class="btn2-nav-js the-i"><i class="fas fa-times"></i></div>
-      </div>
+            <!-- <div class="btn2-nav-js the-i"><i class="fas fa-times"></i></div> -->
+          </div>
       </div>
       <!-- header -->
         <div id="header">
@@ -156,48 +156,57 @@
 
 
     <script>
-      const about = document.querySelector('.about-js')
+      const abouts = document.querySelectorAll('.about-js')
       const mainNav = document.querySelector('.js-main')
       const content = document.querySelector('.content-inner')
-      const shop = document.querySelector('.shop-js')
+      const shops = document.querySelectorAll('.shop-js')
 
       function showAbouttab() {
         mainNav.classList.add('open')
         content.classList.add('close')
+        tabNav.classList.remove('open')
       }
 
       function hidenAbouttab() {
         mainNav.classList.remove('open')
         content.classList.remove('close')
-      }
-      about.addEventListener('click', showAbouttab)
-      shop.addEventListener('click', hidenAbouttab)
-      
-    </script>
-
-
-    <!-- tab-nav-mobile -->
-    <script>
-      const tabNav =document.querySelector('.tab-nav-js')
-      const btnNavMobile =document.querySelector('.btn-nav-js')
-      const btnNavMobile2 =document.querySelector('.btn2-nav-js')
-
-      function showtabNav() {
-        tabNav.classList.add('open')
-      }
-      function hiddentabNav() {
         tabNav.classList.remove('open')
       }
-
-      btnNavMobile.addEventListener('click',showtabNav)
-      btnNavMobile2.addEventListener('click',hiddentabNav)
+      for(const about of abouts) {
+      about.addEventListener('click', showAbouttab)}
+      for(const shop of shops) {
+      shop.addEventListener('click', hidenAbouttab)}
       
+      
+      // <!-- tab-nav-mobile -->
+    
+        const tabNav =document.querySelector('.tab-nav-js')
+        const btnNavMobile =document.querySelector('.btn-nav-js')
+        const btnNavMobile2 =document.querySelector('.btn2-nav-js')
+        const tabNanInner=document.querySelector('.tab-nav-container-js')
 
+        function showtabNav() {
+          tabNav.classList.add('open')
+        }
+        function hiddentabNav() {
+          tabNav.classList.remove('open')
+        }
 
-      /* fix phần nội dung nav-mobile */
+        btnNavMobile.addEventListener('click',showtabNav)
+        btnNavMobile2.addEventListener('click',hiddentabNav)
+        tabNav.addEventListener('click', hiddentabNav)
+        tabNanInner.addEventListener('click', function (event) {
+            event.stopImmediatePropagation()
+        })
+
+      
+      
+         /* fix phần nội dung nav-mobile */
+    </script>
+
  
 
-    </script>
+
 
 
 </body>

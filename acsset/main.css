@@ -257,19 +257,28 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.068);
+    z-index: 1
+}
+.the-i {
+    position: absolute;
+    right: 19px;
+    top: 10px;
+    font-size: 26px;
 }
 .the4-2 {
-    width: 80%;
+    width: 90%;
     min-height: 100%;
     background-color: #fff;
     position: fixed;
     z-index: 2;
     top: 0;
     display: flex;
+    animation: intoSlide ease 0.2s;
+    justify-content: center;
 }
 .the4-2-1 {
-    width: 97%;
+    width: 100%;
 }
 .nav-one {
     display: flex;
@@ -288,6 +297,12 @@ html {
     color: #000;
     opacity: 1;
 }
-.the-i {
-    margin-top: 3px;
+
+@keyframes intoSlide {
+    from {  
+        transform: translateX(-200px);
+    }
+    to { 
+        transform: translateX(0);
+    }
 }
