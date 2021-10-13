@@ -7,10 +7,11 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     color: rgba(0,0,0,.78);
     font-weight: 400;
+    /* scroll-behavior: smooth; */
 }
 
 #main {
-    background-color: rgba(0, 0, 0, 0.03);
+    background-color: #fff;
     overflow-x: hidden;
 }
 
@@ -69,6 +70,18 @@ html {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.6);
 }
+.btn-mobile {
+    width: 20px;
+    padding: 20px 36px;
+    display: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+.btn-mobile:hover {
+    cursor: pointer;
+    color: #000;
+}/* đang làm dở phần hiện bar mobile*/
+
+
 
 
 /* Toast-messages */
@@ -76,7 +89,10 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: sideInRight ease 5s, fadeOut linear 1s 10s forwards ;
+    animation: sideInRight ease 5s, fadeOut linear 1s 7s forwards ;
+    position: fixed;
+    top:20%;
+    left: 0; right: 0;
 }
 .toast__main {
     display: flex;
@@ -223,4 +239,55 @@ html {
 .about-a{
     display: flex;
     flex-direction: column; 
+}
+
+
+
+
+/* test-tab-nav-mobile */
+.tab-nav{
+ display: none;
+}
+.tab-nav.tab-nav-js.open{
+    display: block;
+}
+.tab-nav--layout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.the4-2 {
+    width: 80%;
+    min-height: 100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    display: flex;
+}
+.the4-2-1 {
+    width: 97%;
+}
+.nav-one {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50%;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(0,0,0,.7);
+}
+
+.nav-one:hover {
+    cursor: pointer;
+    color: #000;
+    opacity: 1;
+}
+.the-i {
+    margin-top: 3px;
 }

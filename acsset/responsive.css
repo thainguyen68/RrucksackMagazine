@@ -13,12 +13,41 @@
 /* mobile */
 @media (max-width: 739px) {
     #header .header-inner {
-        padding: 50px 24px;
+        padding: 24px 12px;
+        position: fixed;
+        background-color: #fff;
+        height: 6%;
+        width: 100%;
+    }
+    #header .top-left{
+        flex: 1.8;
+        order: 2;
+        padding: 8px;
+        justify-content: center;
+    }
+    #header .top-left .logo {
+        padding: 0;
     }
     #header .top-right {
         padding: 1px;
-        display: inline-block; /* mới thêm từ dòng này trở xuống của class Top-Right*/
-        line-height: 1.8;
+        display: inline-block;
+        flex: 0.8;
+    }
+    #header .top-right .the4{
+        display: none;
+    }
+    #header .the1 {
+        order: 1;
+        padding: 8px;
+        font-size: 12px;
+        display: table-row-group;
+    }
+    .btn-mobile {
+        padding: 8px;
+        display: flex;
+        justify-content: flex-end;
+        order: 3;
+        flex: 0.6;
     }
 
 
@@ -32,14 +61,23 @@
     .empty {
         display: none;
     }
+    .main-nav__About {
+        padding: 30px 20px;
+    }
+    .main-nav__About .nav-about {
+        width: 100%;
+        margin-bottom: 17px;
+    }
 
 
     #content {
-        padding: 0 20px 45px;
+        padding: 12px 20px 45px;
     }
     #content .list-magazine {
         max-width: 50%;
         padding: 0 10px;
         margin: 15px 0;
     }
+
+
 }
