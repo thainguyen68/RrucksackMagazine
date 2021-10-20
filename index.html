@@ -71,8 +71,7 @@
               <img class="nav-about" src="./acsset/img/itemAbout/item1.jpg" alt="">
               <img class="nav-about" src="./acsset/img/itemAbout/item2.jpg" alt="">
             </div>
-        </div>
-        <!-- tab-Stockists- -->
+            <!-- tab-Stockists- -->
             <div class="main-nav__Stockists js-main-stock">
               <div class="main-nav__stockists-inner">
                 <div class="stockists-inner">
@@ -161,7 +160,7 @@
                       Third Place Books, Lake Forest Park & Seward Park, WA<br>
                       U Bookstore, Mill Creek & Seattle, WA<br>
                       Village Books-Bellingham, Bellingham, WA</p>
-                  </div>
+                    </div>
                 </div>
                 <div class="stockists-inner">
                   <div class="stockists-inner3">
@@ -174,13 +173,13 @@
                     <h2>Germany</h2>
                     <p><a href="">Coffee Table Mags</a>, Hamburg
                       <a href="">Rosa Wolf</a>, Berlin</p>
-                    <h2>Hong Kong</h2>
-                    <p><a href="">Kubrick Bookstore & Cafe</a>, Hong Kong</p>
-                    <h2>Italy</h2>
-                    <p><a href="">Frabs Magazines & More</a>
-                      <a href="">Shangri-La-Heritage</a>, Province of Bergamo</p>
-                    <h2>Japan</h2>
-                    <p>Daikanyama Tsutaya Books, Tokyo</p>
+                      <h2>Hong Kong</h2>
+                      <p><a href="">Kubrick Bookstore & Cafe</a>, Hong Kong</p>
+                      <h2>Italy</h2>
+                      <p><a href="">Frabs Magazines & More</a>
+                        <a href="">Shangri-La-Heritage</a>, Province of Bergamo</p>
+                        <h2>Japan</h2>
+                        <p>Daikanyama Tsutaya Books, Tokyo</p>
                     <h2>Netherlands</h2>
                     <p><a href="">Athenaeum Nieuwscentrum</a>, Amsterdam</p>
                     <h2>New Zealand </h2>
@@ -189,7 +188,7 @@
                     <p><a href="">Hello Kristof</a>, Lisbon <br>
                       <a href="">Under the Cover</a>, Lisbon <br>
                       <a href="">Manifesto</a>, Mercado Matosinhos <br>(Porto)</p>
-                    <h2>Singapore</h2>
+                      <h2>Singapore</h2>
                     <p><a href="">Basheer Graphics</a>, Singapore</p>
                     <h2>South Korea</h2>
                     <p><a href="">World Mags</a></p>
@@ -226,18 +225,21 @@
                       <a href="">WHSmiths</a> (UK)<br>
                       <a href="">William Dam</a> (Denmark)<br>
                       <a href="">Wordery</a> (UK)</p><br>
-                  </div>
+                    </div>
                 </div>
                 <div class="stockists-inner"></div>
               </div>
             </div>
 
-        <!-- tab-Stories -->
+          <!-- tab-Stories -->
+        
+          <!-- Content -->
+        
+        </div>
 
-        <!-- Content -->
         <div id="content">
           <div class="content-inner">
-              <div href="#" class="list-magazine">
+            <div href="#" class="list-magazine">
                 <a href="" class="list-magazine__link">
                   <img src="./acsset/img/allimgofmain/Vol8/item1.jpg" alt="" class="magazine-item">
                   <div class="about-item">Volume Eight: Coast (Gold Edition)</div>
@@ -346,23 +348,29 @@
       const mainNavAbout = document.querySelector('.js-main-about')
       const shops = document.querySelectorAll('.shop-js')
       const content = document.querySelector('.content-inner')
-      const stockistss =document.querySelectorAll('stockists-js')
-      const mainNavStockists =document.querySelector('js-main-stock')
+
+      const stockistss = document.querySelectorAll('.stockists-js')
+      const mainNavStockists = document.querySelector('.js-main-stock')
 
       function showAbouttab() {
         mainNavAbout.classList.add('open')
         content.classList.add('close')
         tabNav.classList.remove('open')
+        mainNavStockists.classList.remove('open')
       }
 
       function showShoptab() {
         mainNavAbout.classList.remove('open')
         content.classList.remove('close')
         tabNav.classList.remove('open')
+        mainNavStockists.classList.remove('open')
       }
       
       function showStockiststab() {
         mainNavStockists.classList.add('open')
+        tabNav.classList.remove('open')
+        content.classList.add('close')
+        mainNavAbout.classList.remove('open')
       }
 
 
@@ -370,7 +378,7 @@
       about.addEventListener('click', showAbouttab)}
       for(const shop of shops) {
       shop.addEventListener('click', showShoptab)}
-      
+
       for(const stockists of stockistss) {
       stockists.addEventListener('click', showStockiststab)}
 

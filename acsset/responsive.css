@@ -65,16 +65,23 @@
     }
     .main-nav__About {
         padding: 40px 20px;
-        margin-top: 12px;
+        margin-top: 20px;
     }
     .main-nav__About .nav-about {
         width: 100%;
         margin-bottom: 17px;
     }
+    .main-nav__Stockists {
+        margin: 40px 60px 45px;
+        padding-top: 20px;
+    }
+
+
 
 
     #content {
         padding: 40px 20px 45px;
+        margin-top: 10px;
     }
     #content .list-magazine {
         max-width: 50%;
