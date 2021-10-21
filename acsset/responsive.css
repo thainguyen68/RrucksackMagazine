@@ -71,15 +71,27 @@
         width: 100%;
         margin-bottom: 17px;
     }
+
+    .stockists-inner {
+        padding: 0;
+    }
     .main-nav__Stockists {
-        margin: 40px 60px 45px;
+        margin: 40px 20px 30px;
         padding-top: 20px;
     }
+    .main-nav__stockists-inner {
+        display: inline-block;
+    }
+    .stockists-inner-empty {display: none;}
+    .stockists-inner1{ padding: 17px 0;}
+    .stockists-inner2{ padding: 17px 0;}
+    .stockists-inner3{ padding: 17px 0;}
+    .stockists-inner4{ padding: 17px 0;}
 
 
 
 
-    #content {
+    .content-inner {
         padding: 40px 20px 45px;
         margin-top: 10px;
     }
