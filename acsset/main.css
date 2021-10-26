@@ -102,6 +102,7 @@ html {
     position: fixed;
     top: 100px;
     left: 0; right: 0;
+    z-index: 1;
 }
 .toast__main {
     display: flex;
@@ -251,8 +252,37 @@ html {
 .list-magazine__link {
     text-decoration: none;
     color: var(--text-color);
-    /* display: flex;
-    flex-direction: column; */
+    display: block;
+    position: relative;
+}
+.list-magazine__link--soldout .soldOut {
+    display: block;
+}
+.soldOut {
+    display: none;
+    position: absolute;
+    width: 35px;
+    height: 32px;
+    font-size: 0.6rem;
+    FONT-WEIGHT: 600;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+    background: #c8ae88;
+    color: var(--white-color);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 4px 0 0;
+}
+.soldOut::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    border-width: 0 17.5px 5px;
+    border-style: solid;
+    border-color: transparent #c8ae88 transparent #c8ae88;
+
 }
 #content .magazine-item {
     width: 100%;
@@ -324,7 +354,7 @@ html {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.068);
-    z-index: 1
+    z-index: 2
 }
 .the-i {
     position: absolute;
