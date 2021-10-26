@@ -231,6 +231,60 @@ html {
     border-color: rgba(0,0,0,.117);
 }
 
+/*StoryTabOpen */
+.main-nav__Stories {
+    margin: 30px 60px;
+    display: none;
+}
+.open {
+    display: block;
+}
+.blog-list__container {
+    margin: 30px 0;
+}
+.blog-list__link {
+    display: inline-block;
+    color: var(--text-color);
+    text-decoration: none;
+}
+.blog-list__link-img {
+    max-width: 720px;
+    width: 100%;
+}
+.blog-list__link-title {
+    font-size: 20px;
+    margin: 5px 0 5px;
+}
+.blog-list__link-type {
+    font-size: 14px;
+    color: #99600b;
+}
+.blog-list__link-type span {
+    margin-right: 6px;
+}
+.main-nav__blog-list-pagination {
+    display: flex;
+    justify-content: center;
+}
+.blog-list-pagination {
+    width: 9px;
+    height: 16px;
+    color: #99600b;
+    line-height: 0;
+}
+.blog-list-pagination:hover {
+    opacity: 0.6;
+} 
+.main-nav__blog-list-page2 {
+    display: none;
+}
+.close-page {
+    display: none;
+}
+.open-page {
+    display: block;
+}
+
 
 
 
