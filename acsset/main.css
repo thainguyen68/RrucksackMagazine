@@ -7,7 +7,7 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     color: rgba(0,0,0,.78);
     font-weight: 400;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     font-size: 100%;
     box-sizing: border-box;
 }
@@ -284,7 +284,10 @@ html {
 .open-page {
     display: block;
 }
-
+#blog {
+    position: relative;
+    top: -135px;
+}
 
 
 
