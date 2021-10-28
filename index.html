@@ -33,7 +33,7 @@
         <div id="header">
             <div class="header-inner">
                 <div class="top-left">
-                  <a href="/" class="logo-link">
+                  <a href="" class="logo-link">
                     <img src="./acsset/img/RucksackLogo.png" alt="logo" class="logo">
                   </a>
                 </div>
@@ -1322,6 +1322,7 @@
       const abouts = document.querySelectorAll('.about-js')
       const mainNavAbout = document.querySelector('.js-main-about')
 
+      const contentLM = document.querySelector('.content-inner-list')
       const shops = document.querySelectorAll('.shop-js')
       const content = document.querySelector('.content-inner')
 
@@ -1334,6 +1335,7 @@
       function showAbouttab() {
         mainNavAbout.classList.add('open')
         content.classList.add('close')
+        contentLM.classList.add('close')
         tabNav.classList.remove('open')
         mainNavStockists.classList.remove('open')
         mainNavStories.classList.remove('open')
@@ -1341,6 +1343,7 @@
 
       function showShoptab() {
         mainNavAbout.classList.remove('open')
+        contentLM.classList.add('close')
         content.classList.remove('close')
         tabNav.classList.remove('open')
         mainNavStockists.classList.remove('open')
@@ -1351,6 +1354,7 @@
         mainNavStockists.classList.add('open')
         tabNav.classList.remove('open')
         content.classList.add('close')
+        contentLM.classList.add('close')
         mainNavAbout.classList.remove('open')
         mainNavStories.classList.remove('open')
       }
@@ -1360,6 +1364,7 @@
         mainNavStockists.classList.remove('open')
         tabNav.classList.remove('open')
         content.classList.add('close')
+        contentLM.classList.add('close')
         mainNavAbout.classList.remove('open')
       }
 
@@ -1441,6 +1446,7 @@
 
       function showLMI1 () {
         content.classList.add('close')
+        contentLM.classList.remove('close')
         listMagazineInner1.classList.add('open-inner')
         listMagazineInner2.classList.remove('open-inner')
         listMagazineInner3.classList.remove('open-inner')
@@ -1455,6 +1461,7 @@
       }
       function showLMI2 () {
         content.classList.add('close')
+        contentLM.classList.remove('close')
         listMagazineInner1.classList.remove('open-inner')
         listMagazineInner2.classList.add('open-inner')
         listMagazineInner3.classList.remove('open-inner')
@@ -1469,6 +1476,7 @@
       }
       function showLMI3 () {
         content.classList.add('close')
+        contentLM.classList.remove('close')
         listMagazineInner1.classList.remove('open-inner')
         listMagazineInner2.classList.remove('open-inner')
         listMagazineInner3.classList.add('open-inner')
@@ -1483,6 +1491,7 @@
       }
       function showLMI4 () {
         content.classList.add('close')
+        contentLM.classList.remove('close')
         listMagazineInner1.classList.remove('open-inner')
         listMagazineInner2.classList.remove('open-inner')
         listMagazineInner3.classList.remove('open-inner')
@@ -1497,6 +1506,7 @@
       }
       function showLMI5 () {
         content.classList.add('close')
+        contentLM.classList.remove('close')
         listMagazineInner1.classList.remove('open-inner')
         listMagazineInner2.classList.remove('open-inner')
         listMagazineInner3.classList.remove('open-inner')
@@ -1511,6 +1521,7 @@
       }
       function showLMI6 () {
         content.classList.add('close')
+        contentLM.classList.remove('close')
         listMagazineInner1.classList.remove('open-inner')
         listMagazineInner2.classList.remove('open-inner')
         listMagazineInner3.classList.remove('open-inner')
@@ -1525,6 +1536,7 @@
       }
       function showLMI7 () {
         content.classList.add('close')
+        contentLM.classList.remove('close')
         listMagazineInner1.classList.remove('open-inner')
         listMagazineInner2.classList.remove('open-inner')
         listMagazineInner3.classList.remove('open-inner')
@@ -1539,6 +1551,7 @@
       }
       function showLMI8 () {
         content.classList.add('close')
+        contentLM.classList.remove('close')
         listMagazineInner1.classList.remove('open-inner')
         listMagazineInner2.classList.remove('open-inner')
         listMagazineInner3.classList.remove('open-inner')
@@ -1553,6 +1566,7 @@
       }
       function showLMI9 () {
         content.classList.add('close')
+        contentLM.classList.remove('close')
         listMagazineInner1.classList.remove('open-inner')
         listMagazineInner2.classList.remove('open-inner')
         listMagazineInner3.classList.remove('open-inner')
@@ -1567,6 +1581,7 @@
       }
       function showLMI10 () {
         content.classList.add('close')
+        contentLM.classList.remove('close')
         listMagazineInner1.classList.remove('open-inner')
         listMagazineInner2.classList.remove('open-inner')
         listMagazineInner3.classList.remove('open-inner')
@@ -1581,6 +1596,7 @@
       }
       function showLMI11 () {
         content.classList.add('close')
+        contentLM.classList.remove('close')
         listMagazineInner1.classList.remove('open-inner')
         listMagazineInner2.classList.remove('open-inner')
         listMagazineInner3.classList.remove('open-inner')

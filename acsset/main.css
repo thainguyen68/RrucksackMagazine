@@ -361,7 +361,9 @@ html {
 .content-inner-list {
     margin: 30px 60px;
 }
-
+.content-inner-list.close {
+    display: none;
+}
 .list-magazine-inner1, .list-magazine-inner2,.list-magazine-inner3, .list-magazine-inner4,.list-magazine-inner5,
 .list-magazine-inner6, .list-magazine-inner7,.list-magazine-inner8, .list-magazine-inner9, .list-magazine-inner10,
 .list-magazine-inner11 {
