@@ -102,7 +102,7 @@ html {
     position: fixed;
     top: 100px;
     left: 0; right: 0;
-    z-index: 1;
+    z-index: 9;
 }
 .toast__main {
     display: flex;
@@ -358,6 +358,177 @@ html {
 }
 
 
+.content-inner-list {
+    margin: 30px 60px;
+}
+
+.list-magazine-inner1, .list-magazine-inner2,.list-magazine-inner3, .list-magazine-inner4,.list-magazine-inner5,
+.list-magazine-inner6, .list-magazine-inner7,.list-magazine-inner8, .list-magazine-inner9, .list-magazine-inner10,
+.list-magazine-inner11 {
+    display: none;
+}
+.list-magazine-inner {
+    display: flex;
+}
+
+
+.list-magazine-inner-left {
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+    padding-top: 10px;
+    width: 67%;
+
+}
+.magazine-heading {
+    font-size: 15px;
+    color: #0f0f0f;
+    margin: 0 0 25px;
+    font-weight: 600;
+}
+.magazine-container {
+    margin: 0 0 25px;
+}
+.magazine-container > p:nth-child(1) {
+    font-size: 13px;
+    margin: 0 0 13px;
+    font-weight: 500;
+    line-height: 1.6;
+    text-align: left;
+}
+.magazine-container > p:nth-child(2) {
+    font-size: 13px;
+    margin: 13px 0;
+    font-weight: 500;
+    line-height: 1.6;
+    text-align: left;
+}
+.list-abuot-item {
+    margin: 13px 0;
+    padding: 0 0 0 40px;
+    list-style: none;
+}
+.list-abuot-item li {
+    font-size: 13px;
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: left;
+}
+.list-abuot-item p::before {
+    content: ".";
+    padding-right: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    min-width: 40px;
+    margin-left: -40px;
+    text-align: right;
+    font-size: 20px;
+}
+
+.span-dsv {
+    font-size: 12px;
+    font-weight: 567;
+    display: block;
+    margin: 0 0 25px;
+    color: var(--gold-color);
+}
+.quantity-box{
+    margin: 0 0 25px;
+}
+.quantiyy-label {
+    font-size: 12px;
+    margin: 0 0 6px;
+}
+.quantity-box input {
+    padding: 7.5px 9.5px;
+    background-color: #e0e0e0;
+    border: 2px solid rgba(238,238,238,0);
+}
+.btn-quantity-box {
+    margin: 0 0 25px;
+}
+.btn-quantity {
+    display: inline-block;
+    padding: 13px 26px;
+    width: auto;
+    height: auto;
+    background-color: #e0e0e0;
+
+}
+.btn-quantity:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.btn-quantity button {
+    outline: none;
+    border:none ;
+    font-size: 13px;
+    text-align: center;
+    background-color: transparent;
+    color: #000000B5;
+    text-transform: uppercase;
+    letter-spacing: 1.9px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.list-magazine-inner-right {
+    width: 34%;
+    position: relative;
+}
+.imgShow1{
+    position: relative; 
+    /* chú ý rằng để 1img này làm gốc nếu để
+    là position:absolute thì n sẽ ko chiếm diện tích trên thẻ nữa đồng
+    nghĩa sẽ đẩy list-img-album lên thế chỗ nó */
+}
+.imgShow2,
+.imgShow3,
+.imgShow4,
+.imgShow5,
+.imgShow6,
+.imgShow7,
+.imgShow8,
+.imgShow9,
+.imgShow10,
+.imgShow11,
+.imgShow12,
+.imgShow13,
+.imgShow14 {
+    position: absolute;
+    left: 0;
+}
+
+.list-magazine-img {
+    --height-width: 406px;
+    max-width: var(--height-width);
+    max-height: var(--height-width);
+    width: 100%;
+}
+.open-img {
+    z-index: 2;
+}
+
+
+
+.list-img-albums {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 406px;
+}
+.list-img-albums > img {
+    width: 55px;
+    height: 55px;
+    margin: 8px 3px 0 0;
+    cursor: pointer;
+}
+.open-inner {
+    display: block;
+}
+
+
 /* Footer */
 #footer {
     background-color: rgba(0, 0, 0, 0.05);
@@ -411,7 +582,7 @@ html {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.068);
-    z-index: 2
+    z-index: 19
 }
 .the-i {
     position: absolute;
@@ -426,7 +597,7 @@ html {
     min-height: 100%;
     background-color: #fff;
     position: fixed;
-    z-index: 2;
+    z-index: 20;
     top: 0;
     display: flex;
     animation: intoSlide ease 0.2s;

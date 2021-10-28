@@ -6,7 +6,9 @@
 
 /* tablet */
 @media (max-width: 1023px) and (min-width: 740px) {
-
+    .show-albums {
+        height: 39%;
+    }
 }
 
 
@@ -18,7 +20,7 @@
         background-color: #fff;
         height: 6%;
         width: 100%;
-        z-index: 1;
+        z-index: 10;
     }
     #header .top-left{
         flex: 1.8;
@@ -115,4 +117,31 @@
         border-width: 1px 15px 5px;
     }
 
+
+/* tí sửa tiếp phần này */
+    .content-inner-list {
+        margin: 75px 20px;
+    }
+    .list-magazine-inner {
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+    .list-magazine-inner-left {
+        padding-right: 0;
+        width: 100%;
+    }
+    .magazine-heading{ /* sửa đi thôi */
+        position: absolute;
+        top: -25px;
+    }
+    .list-magazine-inner-right {
+        width: 100%;
+        padding: 0 0 25px;
+    }
+    .show-albums {
+        height: 380px;
+        max-height: 100%;
+        margin-top: 68px;
+    }
 }
